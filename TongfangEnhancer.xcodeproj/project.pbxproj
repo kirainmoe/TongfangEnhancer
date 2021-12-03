@@ -3,19 +3,114 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7144E985275909D200E6996C /* FanControlHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7144E983275909D200E6996C /* FanControlHandler.cpp */; };
+		7144E986275909D200E6996C /* FanControlHandler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 7144E984275909D200E6996C /* FanControlHandler.hpp */; };
+		7144E989275910C500E6996C /* FanControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7144E988275910C500E6996C /* FanControl.cpp */; };
+		7144E98C275911C300E6996C /* smc.c in Sources */ = {isa = PBXBuildFile; fileRef = 7144E98A275911C300E6996C /* smc.c */; };
+		715507E72758EFEC007BB6D7 /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 715507E52758EFDE007BB6D7 /* libkmod.a */; };
 		715D24282758876E0078EBFB /* TongfangEnhancer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 715D24272758876E0078EBFB /* TongfangEnhancer.hpp */; };
-		715D242A2758876E0078EBFB /* TongfangEnhancer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 715D24292758876E0078EBFB /* TongfangEnhancer.cpp */; };
+		715D242A2758876E0078EBFB /* TongfangEnhancerDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 715D24292758876E0078EBFB /* TongfangEnhancerDriver.cpp */; };
+		715D24452758C0E20078EBFB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 715D24412758C0E20078EBFB /* Info.plist */; };
+		715D29422758C3440078EBFB /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 715D24472758C2840078EBFB /* libkmod.a */; };
+		715D29502758C4250078EBFB /* VoodooWMIController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 715D243E2758C0E20078EBFB /* VoodooWMIController.cpp */; };
+		715D29552758C8E50078EBFB /* ACPIPS2NubProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 715D29532758C8E50078EBFB /* ACPIPS2NubProxy.cpp */; };
+		715D29562758C8E50078EBFB /* ACPIPS2NubProxy.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 715D29542758C8E50078EBFB /* ACPIPS2NubProxy.hpp */; };
+		715D29592758C9680078EBFB /* HotkeyHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 715D29572758C9680078EBFB /* HotkeyHandler.cpp */; };
+		715D295A2758C9680078EBFB /* HotkeyHandler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 715D29582758C9680078EBFB /* HotkeyHandler.hpp */; };
+		717CA550275907090061F4FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 717CA54F275907090061F4FD /* main.m */; };
+		717CA5512759071B0061F4FD /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717CA53F2759061E0061F4FD /* CoreServices.framework */; };
+		717CA552275907210061F4FD /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717CA53B275906130061F4FD /* CoreWLAN.framework */; };
+		717CA553275907270061F4FD /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717CA541275906230061F4FD /* IOBluetooth.framework */; };
+		717CA5542759072F0061F4FD /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717CA53D275906180061F4FD /* AppKit.framework */; };
+		71BDA1EA27591A8E00E8D368 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BDA1E927591A8E00E8D368 /* main.cpp */; };
+		71BDA1EF27591AF500E8D368 /* libboost_program_options.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BDA1EE27591AF500E8D368 /* libboost_program_options.a */; };
+		71BDA1F027591AFC00E8D368 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717CA53F2759061E0061F4FD /* CoreServices.framework */; };
+		71BDA1F227591B0100E8D368 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BDA1F127591B0100E8D368 /* IOKit.framework */; };
+		71BDA1F82759241900E8D368 /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 715507E52758EFDE007BB6D7 /* libkmod.a */; };
+		71C1F4FF2759A3580055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71C1F4FE2759A3580055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist */; };
+		71C1F5022759A43A0055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71C1F4FE2759A3580055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist */; };
+		71C1F5032759A43A0055283B /* install_daemon.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71C1F5002759A3860055283B /* install_daemon.sh */; };
+		71D73CC02758ED0800AAB7DA /* TongfangEnhancerUserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71D73CBF2758ED0800AAB7DA /* TongfangEnhancerUserClient.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		717CA545275906E70061F4FD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		71BDA1E527591A8E00E8D368 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		71C1F5012759A42D0055283B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				71C1F5022759A43A0055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist in CopyFiles */,
+				71C1F5032759A43A0055283B /* install_daemon.sh in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7144E983275909D200E6996C /* FanControlHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FanControlHandler.cpp; sourceTree = "<group>"; };
+		7144E984275909D200E6996C /* FanControlHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FanControlHandler.hpp; sourceTree = "<group>"; };
+		7144E987275910A700E6996C /* Daemon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Daemon.hpp; sourceTree = "<group>"; };
+		7144E988275910C500E6996C /* FanControl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FanControl.cpp; sourceTree = "<group>"; };
+		7144E98A275911C300E6996C /* smc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smc.c; sourceTree = "<group>"; };
+		7144E98B275911C300E6996C /* smc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smc.h; sourceTree = "<group>"; };
+		7144E98D2759123500E6996C /* FanControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FanControl.h; sourceTree = "<group>"; };
+		715507E52758EFDE007BB6D7 /* libkmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkmod.a; path = MacKernelSDK/Library/x86_64/libkmod.a; sourceTree = "<group>"; };
 		715D24242758876E0078EBFB /* TongfangEnhancer.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TongfangEnhancer.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		715D24272758876E0078EBFB /* TongfangEnhancer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TongfangEnhancer.hpp; sourceTree = "<group>"; };
-		715D24292758876E0078EBFB /* TongfangEnhancer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TongfangEnhancer.cpp; sourceTree = "<group>"; };
+		715D24292758876E0078EBFB /* TongfangEnhancerDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TongfangEnhancerDriver.cpp; sourceTree = "<group>"; };
 		715D242B2758876E0078EBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		715D243E2758C0E20078EBFB /* VoodooWMIController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VoodooWMIController.cpp; sourceTree = "<group>"; };
+		715D243F2758C0E20078EBFB /* VoodooWMIController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VoodooWMIController.hpp; sourceTree = "<group>"; };
+		715D24412758C0E20078EBFB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		715D24472758C2840078EBFB /* libkmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkmod.a; path = MacKernelSDK/Library/universal/libkmod.a; sourceTree = "<group>"; };
+		715D29482758C41E0078EBFB /* VoodooWMI.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoodooWMI.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		715D29532758C8E50078EBFB /* ACPIPS2NubProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACPIPS2NubProxy.cpp; sourceTree = "<group>"; };
+		715D29542758C8E50078EBFB /* ACPIPS2NubProxy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ACPIPS2NubProxy.hpp; sourceTree = "<group>"; };
+		715D29572758C9680078EBFB /* HotkeyHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HotkeyHandler.cpp; sourceTree = "<group>"; };
+		715D29582758C9680078EBFB /* HotkeyHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HotkeyHandler.hpp; sourceTree = "<group>"; };
+		715D295B2758C9D60078EBFB /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		717CA537275904A30061F4FD /* OSD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSD.h; sourceTree = "<group>"; };
+		717CA538275904A30061F4FD /* BezelServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezelServices.h; sourceTree = "<group>"; };
+		717CA53A275905AB0061F4FD /* classes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = classes.hpp; sourceTree = "<group>"; };
+		717CA53B275906130061F4FD /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreWLAN.framework; path = System/Library/Frameworks/CoreWLAN.framework; sourceTree = SDKROOT; };
+		717CA53D275906180061F4FD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		717CA53F2759061E0061F4FD /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		717CA541275906230061F4FD /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		717CA547275906E70061F4FD /* TongfangEnhancerDaemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TongfangEnhancerDaemon; sourceTree = BUILT_PRODUCTS_DIR; };
+		717CA54F275907090061F4FD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		71BDA1E727591A8E00E8D368 /* fancli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fancli; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BDA1E927591A8E00E8D368 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		71BDA1EE27591AF500E8D368 /* libboost_program_options.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_program_options.a; path = ../../../../usr/local/Cellar/boost/1.76.0/lib/libboost_program_options.a; sourceTree = "<group>"; };
+		71BDA1F127591B0100E8D368 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		71BDA1F3275921A800E8D368 /* libkmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkmod.a; path = usr/lib/libkmod.a; sourceTree = SDKROOT; };
+		71BDA1F62759231300E8D368 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		71C1F4FE2759A3580055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist; sourceTree = "<group>"; };
+		71C1F5002759A3860055283B /* install_daemon.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install_daemon.sh; sourceTree = "<group>"; };
+		71D73CBF2758ED0800AAB7DA /* TongfangEnhancerUserClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TongfangEnhancerUserClient.cpp; sourceTree = "<group>"; };
+		71D73CC12758ED6F00AAB7DA /* message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,17 +118,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715D29422758C3440078EBFB /* libkmod.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		715D29452758C41E0078EBFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				715507E72758EFEC007BB6D7 /* libkmod.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717CA544275906E70061F4FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717CA5542759072F0061F4FD /* AppKit.framework in Frameworks */,
+				717CA553275907270061F4FD /* IOBluetooth.framework in Frameworks */,
+				717CA552275907210061F4FD /* CoreWLAN.framework in Frameworks */,
+				717CA5512759071B0061F4FD /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BDA1E427591A8E00E8D368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BDA1F82759241900E8D368 /* libkmod.a in Frameworks */,
+				71BDA1EF27591AF500E8D368 /* libboost_program_options.a in Frameworks */,
+				71BDA1F227591B0100E8D368 /* IOKit.framework in Frameworks */,
+				71BDA1F027591AFC00E8D368 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7144E982275909B700E6996C /* FanControl */ = {
+			isa = PBXGroup;
+			children = (
+				7144E983275909D200E6996C /* FanControlHandler.cpp */,
+				7144E984275909D200E6996C /* FanControlHandler.hpp */,
+			);
+			path = FanControl;
+			sourceTree = "<group>";
+		};
 		715D241A2758876E0078EBFB = {
 			isa = PBXGroup;
 			children = (
 				715D24262758876E0078EBFB /* TongfangEnhancer */,
+				717CA548275906E70061F4FD /* TongfangEnhancerDaemon */,
+				71BDA1E827591A8E00E8D368 /* FanCLI */,
 				715D24252758876E0078EBFB /* Products */,
+				715D24462758C26A0078EBFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,6 +179,9 @@
 			isa = PBXGroup;
 			children = (
 				715D24242758876E0078EBFB /* TongfangEnhancer.kext */,
+				715D29482758C41E0078EBFB /* VoodooWMI.kext */,
+				717CA547275906E70061F4FD /* TongfangEnhancerDaemon */,
+				71BDA1E727591A8E00E8D368 /* fancli */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,11 +189,89 @@
 		715D24262758876E0078EBFB /* TongfangEnhancer */ = {
 			isa = PBXGroup;
 			children = (
+				7144E982275909B700E6996C /* FanControl */,
+				715D29522758C7800078EBFB /* Hotkey */,
+				715D29492758C41E0078EBFB /* VoodooWMI */,
 				715D24272758876E0078EBFB /* TongfangEnhancer.hpp */,
-				715D24292758876E0078EBFB /* TongfangEnhancer.cpp */,
+				715D24292758876E0078EBFB /* TongfangEnhancerDriver.cpp */,
+				71D73CBF2758ED0800AAB7DA /* TongfangEnhancerUserClient.cpp */,
 				715D242B2758876E0078EBFB /* Info.plist */,
+				715D295B2758C9D60078EBFB /* common.h */,
+				71D73CC12758ED6F00AAB7DA /* message.h */,
+				717CA53A275905AB0061F4FD /* classes.hpp */,
 			);
 			path = TongfangEnhancer;
+			sourceTree = "<group>";
+		};
+		715D24462758C26A0078EBFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71BDA1F62759231300E8D368 /* Kernel.framework */,
+				71BDA1F3275921A800E8D368 /* libkmod.a */,
+				71BDA1F127591B0100E8D368 /* IOKit.framework */,
+				71BDA1EE27591AF500E8D368 /* libboost_program_options.a */,
+				717CA541275906230061F4FD /* IOBluetooth.framework */,
+				717CA53F2759061E0061F4FD /* CoreServices.framework */,
+				717CA53D275906180061F4FD /* AppKit.framework */,
+				717CA53B275906130061F4FD /* CoreWLAN.framework */,
+				715507E52758EFDE007BB6D7 /* libkmod.a */,
+				715D24472758C2840078EBFB /* libkmod.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		715D29492758C41E0078EBFB /* VoodooWMI */ = {
+			isa = PBXGroup;
+			children = (
+				715D243E2758C0E20078EBFB /* VoodooWMIController.cpp */,
+				715D243F2758C0E20078EBFB /* VoodooWMIController.hpp */,
+				715D24412758C0E20078EBFB /* Info.plist */,
+			);
+			path = VoodooWMI;
+			sourceTree = "<group>";
+		};
+		715D29522758C7800078EBFB /* Hotkey */ = {
+			isa = PBXGroup;
+			children = (
+				715D29532758C8E50078EBFB /* ACPIPS2NubProxy.cpp */,
+				715D29542758C8E50078EBFB /* ACPIPS2NubProxy.hpp */,
+				715D29572758C9680078EBFB /* HotkeyHandler.cpp */,
+				715D29582758C9680078EBFB /* HotkeyHandler.hpp */,
+			);
+			path = Hotkey;
+			sourceTree = "<group>";
+		};
+		717CA548275906E70061F4FD /* TongfangEnhancerDaemon */ = {
+			isa = PBXGroup;
+			children = (
+				71C1F4FD2759A2FA0055283B /* scripts */,
+				7144E98A275911C300E6996C /* smc.c */,
+				7144E98B275911C300E6996C /* smc.h */,
+				717CA54F275907090061F4FD /* main.m */,
+				7144E987275910A700E6996C /* Daemon.hpp */,
+				717CA537275904A30061F4FD /* OSD.h */,
+				717CA538275904A30061F4FD /* BezelServices.h */,
+				7144E988275910C500E6996C /* FanControl.cpp */,
+				7144E98D2759123500E6996C /* FanControl.h */,
+			);
+			path = TongfangEnhancerDaemon;
+			sourceTree = "<group>";
+		};
+		71BDA1E827591A8E00E8D368 /* FanCLI */ = {
+			isa = PBXGroup;
+			children = (
+				71BDA1E927591A8E00E8D368 /* main.cpp */,
+			);
+			path = FanCLI;
+			sourceTree = "<group>";
+		};
+		71C1F4FD2759A2FA0055283B /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				71C1F4FE2759A3580055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist */,
+				71C1F5002759A3860055283B /* install_daemon.sh */,
+			);
+			path = scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,7 +281,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715D29562758C8E50078EBFB /* ACPIPS2NubProxy.hpp in Headers */,
 				715D24282758876E0078EBFB /* TongfangEnhancer.hpp in Headers */,
+				715D295A2758C9680078EBFB /* HotkeyHandler.hpp in Headers */,
+				7144E986275909D200E6996C /* FanControlHandler.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		715D29432758C41E0078EBFB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +306,7 @@
 				715D24202758876E0078EBFB /* Sources */,
 				715D24212758876E0078EBFB /* Frameworks */,
 				715D24222758876E0078EBFB /* Resources */,
+				71C1F5012759A42D0055283B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -86,6 +316,58 @@
 			productName = TongfangEnhancer;
 			productReference = 715D24242758876E0078EBFB /* TongfangEnhancer.kext */;
 			productType = "com.apple.product-type.kernel-extension";
+		};
+		715D29472758C41E0078EBFB /* VoodooWMI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 715D294D2758C41E0078EBFB /* Build configuration list for PBXNativeTarget "VoodooWMI" */;
+			buildPhases = (
+				715D29432758C41E0078EBFB /* Headers */,
+				715D29442758C41E0078EBFB /* Sources */,
+				715D29452758C41E0078EBFB /* Frameworks */,
+				715D29462758C41E0078EBFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoodooWMI;
+			productName = VoodooWMI;
+			productReference = 715D29482758C41E0078EBFB /* VoodooWMI.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+		717CA546275906E70061F4FD /* TongfangEnhancerDaemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717CA54B275906E70061F4FD /* Build configuration list for PBXNativeTarget "TongfangEnhancerDaemon" */;
+			buildPhases = (
+				717CA543275906E70061F4FD /* Sources */,
+				717CA544275906E70061F4FD /* Frameworks */,
+				717CA545275906E70061F4FD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TongfangEnhancerDaemon;
+			productName = TongfangEnhancerDaemon;
+			productReference = 717CA547275906E70061F4FD /* TongfangEnhancerDaemon */;
+			productType = "com.apple.product-type.tool";
+		};
+		71BDA1E627591A8E00E8D368 /* fancli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71BDA1EB27591A8E00E8D368 /* Build configuration list for PBXNativeTarget "fancli" */;
+			buildPhases = (
+				71BDA1E327591A8E00E8D368 /* Sources */,
+				71BDA1E427591A8E00E8D368 /* Frameworks */,
+				71BDA1E527591A8E00E8D368 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fancli;
+			productName = fancli;
+			productReference = 71BDA1E727591A8E00E8D368 /* fancli */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,10 +381,19 @@
 					715D24232758876E0078EBFB = {
 						CreatedOnToolsVersion = 13.1;
 					};
+					715D29472758C41E0078EBFB = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					717CA546275906E70061F4FD = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					71BDA1E627591A8E00E8D368 = {
+						CreatedOnToolsVersion = 13.1;
+					};
 				};
 			};
 			buildConfigurationList = 715D241E2758876E0078EBFB /* Build configuration list for PBXProject "TongfangEnhancer" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -115,12 +406,24 @@
 			projectRoot = "";
 			targets = (
 				715D24232758876E0078EBFB /* TongfangEnhancer */,
+				715D29472758C41E0078EBFB /* VoodooWMI */,
+				717CA546275906E70061F4FD /* TongfangEnhancerDaemon */,
+				71BDA1E627591A8E00E8D368 /* fancli */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		715D24222758876E0078EBFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				715D24452758C0E20078EBFB /* Info.plist in Resources */,
+				71C1F4FF2759A3580055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		715D29462758C41E0078EBFB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -134,7 +437,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				715D242A2758876E0078EBFB /* TongfangEnhancer.cpp in Sources */,
+				7144E985275909D200E6996C /* FanControlHandler.cpp in Sources */,
+				715D242A2758876E0078EBFB /* TongfangEnhancerDriver.cpp in Sources */,
+				71D73CC02758ED0800AAB7DA /* TongfangEnhancerUserClient.cpp in Sources */,
+				715D29552758C8E50078EBFB /* ACPIPS2NubProxy.cpp in Sources */,
+				715D29592758C9680078EBFB /* HotkeyHandler.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		715D29442758C41E0078EBFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				715D29502758C4250078EBFB /* VoodooWMIController.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717CA543275906E70061F4FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7144E989275910C500E6996C /* FanControl.cpp in Sources */,
+				7144E98C275911C300E6996C /* smc.c in Sources */,
+				717CA550275907090061F4FD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BDA1E327591A8E00E8D368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BDA1EA27591A8E00E8D368 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +525,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -245,7 +578,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -262,7 +595,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TongfangEnhancer/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				KERNEL_FRAMEWORK_HEADERS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MacKernelSDK/Library/universal",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				MODULE_NAME = com.kirainmoe.TongfangEnhancer;
 				MODULE_VERSION = 1.0.0d1;
@@ -284,7 +623,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TongfangEnhancer/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				KERNEL_FRAMEWORK_HEADERS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MacKernelSDK/Library/universal",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				MODULE_NAME = com.kirainmoe.TongfangEnhancer;
 				MODULE_VERSION = 1.0.0d1;
@@ -293,6 +638,112 @@
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		715D294E2758C41E0078EBFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TongfangEnhancer/VoodooWMI/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				KERNEL_FRAMEWORK_HEADERS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MacKernelSDK/Library/universal",
+					"$(PROJECT_DIR)/MacKernelSDK/Library/x86_64",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				MODULE_NAME = io.github.goshin.VoodooWMI;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.goshin.VoodooWMI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		715D294F2758C41E0078EBFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TongfangEnhancer/VoodooWMI/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				KERNEL_FRAMEWORK_HEADERS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MacKernelSDK/Library/universal",
+					"$(PROJECT_DIR)/MacKernelSDK/Library/x86_64",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				MODULE_NAME = io.github.goshin.VoodooWMI;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.goshin.VoodooWMI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		717CA54C275906E70061F4FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		717CA54D275906E70061F4FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		71BDA1EC27591A8E00E8D368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib,
+					"$(PROJECT_DIR)/MacKernelSDK/Library/x86_64",
+					/usr/local/Cellar/boost/1.76.0/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		71BDA1ED27591A8E00E8D368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib,
+					"$(PROJECT_DIR)/MacKernelSDK/Library/x86_64",
+					/usr/local/Cellar/boost/1.76.0/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -313,6 +764,33 @@
 			buildConfigurations = (
 				715D242F2758876E0078EBFB /* Debug */,
 				715D24302758876E0078EBFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		715D294D2758C41E0078EBFB /* Build configuration list for PBXNativeTarget "VoodooWMI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				715D294E2758C41E0078EBFB /* Debug */,
+				715D294F2758C41E0078EBFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717CA54B275906E70061F4FD /* Build configuration list for PBXNativeTarget "TongfangEnhancerDaemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717CA54C275906E70061F4FD /* Debug */,
+				717CA54D275906E70061F4FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71BDA1EB27591A8E00E8D368 /* Build configuration list for PBXNativeTarget "fancli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BDA1EC27591A8E00E8D368 /* Debug */,
+				71BDA1ED27591A8E00E8D368 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
