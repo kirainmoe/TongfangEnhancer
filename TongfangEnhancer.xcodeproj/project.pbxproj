@@ -109,6 +109,7 @@
 		71BDA1F62759231300E8D368 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
 		71C1F4FE2759A3580055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist; sourceTree = "<group>"; };
 		71C1F5002759A3860055283B /* install_daemon.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install_daemon.sh; sourceTree = "<group>"; };
+		71CB2AEC2759AC6900411309 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		71D73CBF2758ED0800AAB7DA /* TongfangEnhancerUserClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TongfangEnhancerUserClient.cpp; sourceTree = "<group>"; };
 		71D73CC12758ED6F00AAB7DA /* message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +168,7 @@
 		715D241A2758876E0078EBFB = {
 			isa = PBXGroup;
 			children = (
+				71CB2AEC2759AC6900411309 /* README.md */,
 				715D24262758876E0078EBFB /* TongfangEnhancer */,
 				717CA548275906E70061F4FD /* TongfangEnhancerDaemon */,
 				71BDA1E827591A8E00E8D368 /* FanCLI */,
