@@ -22,6 +22,7 @@ void showAppInfo() {
     std::cout << std::endl;
 }
 
+
 /// Send message to TongfangFanControlDriver
 ///
 /// @param message FanControlMessage
@@ -52,11 +53,27 @@ int sendMessageToDriver(WMIActionMessage message) {
 }
 
 
+/// Send message to driver to disable auto adjust fan speed
+///
+/// @param enable bool
+void toggleAutoAdjustFanSpeed(bool enable) {
+    std::cout << "[fancli] toggle auto adjust fan speed: " << enable << std::endl;
+    
+    WMIActionMessage message;
+    message.type = kActionSetAutoAdjustFanSpeed;
+    message.arg1 = (int)enable;
+    
+    sendMessageToDriver(message);
+}
+
+
 /// Set fan mode (-m, --mode)
 /// Accepted mode: normal / boost
 ///
 /// @param mode FanControlMode
 void setFanMode(FanControlMode mode) {
+    toggleAutoAdjustFanSpeed(false);
+    
     std::cout << "[fancli] setting fanMode: " << mode << std::endl;
     
     WMIActionMessage message;
@@ -72,6 +89,8 @@ void setFanMode(FanControlMode mode) {
 ///
 /// @param speedLevel int
 void setFanSpeed(int speedLevel) {
+    toggleAutoAdjustFanSpeed(false);
+    
     std::cout << "[fancli] setting fan speedLevel: " << speedLevel << std::endl;
     
     WMIActionMessage message;
@@ -83,6 +102,8 @@ void setFanSpeed(int speedLevel) {
 
 
 void reloadFanConfig() {
+    toggleAutoAdjustFanSpeed(true);
+    
     std::cout << "[fancli] request reload fan config" << std::endl;
     
     WMIActionMessage message;
@@ -111,6 +132,7 @@ int main(int argc, char* argv[]) {
     options_description desc("Allowed options");
     desc.add_options()
         ("mode,m", value<std::string>(), "Set laptop fan work mode [normal, boost]")
+        ("auto,a", value<std::string>(), "Toggle auto adjust fan speed [true, false]")
         ("level,l", value<int>(), "Set fan speed level manually [0-5]")
         ("reload,r", "Send reload fan controlling config request to daemon process")
         ("help,h", "Display help message");
@@ -147,6 +169,12 @@ int main(int argc, char* argv[]) {
         }
         
         setFanSpeed(speedLevel);
+        return 0;
+    }
+    
+    if (vm.count("auto")) {
+        std::string autoAdjust = vm["auto"].as<std::string>();
+        toggleAutoAdjustFanSpeed(autoAdjust == "true");
         return 0;
     }
     

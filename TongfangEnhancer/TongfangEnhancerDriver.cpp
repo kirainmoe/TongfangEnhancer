@@ -138,6 +138,9 @@ i8 TongfangEnhancerDriver::dispatchCommand(u8 id, int arg1, int arg2) {
         case kActionSetSpeed:
             fanControlHandler->setFanSpeed(arg1);
             break;
+        case kActionSetAutoAdjustFanSpeed:
+            sendMessageToDaemon(id, arg1, arg2);
+            break;
         default:
             return -1;
     }

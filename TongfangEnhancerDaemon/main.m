@@ -204,6 +204,9 @@ void dispatchMessage(struct WMIActionMessage *message) {
         case kActionReloadFanConfig:
             reloadFanControlConfig();
             break;
+        case kActionSetAutoAdjustFanSpeed:
+            setShouldAdjustFanSpeed((message->arg1) > 0);
+            break;
         default:
             printf("[TongfangEnhancerDaemon] unknown type %d\n", message->type);
     }

@@ -1,6 +1,8 @@
 #include "Daemon.hpp"
 #include "FanControl.h"
 
+bool shouldAdjustFanSpeed = false;
+
 pthread_mutex_t configLock;
 
 /// Send message to TongfangFanControlDriver
@@ -68,10 +70,11 @@ extern "C" void initFanControlConfig() {
     
     fanControlConfig.clear();
     fanControlConfig.push_back(FanControlItem(0.0, 0, FanModeNormal));
-    fanControlConfig.push_back(FanControlItem(40.0, 1, FanModeCustom));
-    fanControlConfig.push_back(FanControlItem(60.0, 2, FanModeCustom));
-    fanControlConfig.push_back(FanControlItem(65.0, 3, FanModeCustom));
-    fanControlConfig.push_back(FanControlItem(75.0, 4, FanModeCustom));
+    fanControlConfig.push_back(FanControlItem(45.0, 0, FanModeCustom));
+    fanControlConfig.push_back(FanControlItem(55.0, 1, FanModeCustom));
+    fanControlConfig.push_back(FanControlItem(65.0, 2, FanModeCustom));
+    fanControlConfig.push_back(FanControlItem(75.0, 3, FanModeCustom));
+    fanControlConfig.push_back(FanControlItem(80.0, 4, FanModeCustom));
     fanControlConfig.push_back(FanControlItem(85.0, 5, FanModeCustom));
     fanControlConfig.push_back(FanControlItem(95.0, 0, FanModeBoost));
     
@@ -122,13 +125,16 @@ extern "C" void reloadFanControlConfig() {
 
 /// adjust fan speed by current CPU temperature
 extern "C" void adjustFanSpeed(double temp) {
-    pthread_mutex_lock(&configLock);
-    if (fanControlConfig.size() <= 0) {
-        pthread_mutex_unlock(&configLock);
+    if (!shouldAdjustFanSpeed) {
         return;
     }
     
     pthread_mutex_lock(&configLock);
+    
+    if (fanControlConfig.size() <= 0) {
+        pthread_mutex_unlock(&configLock);
+        return;
+    }
     FanControlItem target = fanControlConfig[0];
     
     for (auto item : fanControlConfig) {
@@ -158,3 +164,8 @@ extern "C" void* monitorCPUTemperature(unsigned int interval) {
     }
 }
 
+
+extern "C" void setShouldAdjustFanSpeed(bool enable) {
+    std::cout << "[fandaemon] set auto adjust fan speed = " << enable << std::endl;
+    shouldAdjustFanSpeed = enable;
+}

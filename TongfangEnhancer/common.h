@@ -20,6 +20,7 @@ enum WMIActionType {
     kActionSetMode,
     kActionSetSpeed,
     kActionReloadFanConfig,
+    kActionSetAutoAdjustFanSpeed,
 };
 
 enum FanControlMode {

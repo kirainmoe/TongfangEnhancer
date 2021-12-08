@@ -26,15 +26,16 @@
 		717CA552275907210061F4FD /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717CA53B275906130061F4FD /* CoreWLAN.framework */; };
 		717CA553275907270061F4FD /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717CA541275906230061F4FD /* IOBluetooth.framework */; };
 		717CA5542759072F0061F4FD /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717CA53D275906180061F4FD /* AppKit.framework */; };
+		71B5A5A6275A448F001BE0F3 /* uninstall.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71B5A5A5275A4440001BE0F3 /* uninstall.sh */; };
 		71BDA1EA27591A8E00E8D368 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BDA1E927591A8E00E8D368 /* main.cpp */; };
-		71BDA1EF27591AF500E8D368 /* libboost_program_options.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BDA1EE27591AF500E8D368 /* libboost_program_options.a */; };
 		71BDA1F027591AFC00E8D368 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717CA53F2759061E0061F4FD /* CoreServices.framework */; };
 		71BDA1F227591B0100E8D368 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BDA1F127591B0100E8D368 /* IOKit.framework */; };
 		71BDA1F82759241900E8D368 /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 715507E52758EFDE007BB6D7 /* libkmod.a */; };
 		71C1F4FF2759A3580055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71C1F4FE2759A3580055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist */; };
 		71C1F5022759A43A0055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71C1F4FE2759A3580055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist */; };
-		71C1F5032759A43A0055283B /* install_daemon.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71C1F5002759A3860055283B /* install_daemon.sh */; };
+		71C1F5032759A43A0055283B /* install.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71C1F5002759A3860055283B /* install.sh */; };
 		71D73CC02758ED0800AAB7DA /* TongfangEnhancerUserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71D73CBF2758ED0800AAB7DA /* TongfangEnhancerUserClient.cpp */; };
+		71EA5E9F275B3C3F001E20DE /* libboost_program_options.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EA5E9E275B3C3F001E20DE /* libboost_program_options.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,8 +63,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				71B5A5A6275A448F001BE0F3 /* uninstall.sh in CopyFiles */,
 				71C1F5022759A43A0055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist in CopyFiles */,
-				71C1F5032759A43A0055283B /* install_daemon.sh in CopyFiles */,
+				71C1F5032759A43A0055283B /* install.sh in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +103,7 @@
 		717CA541275906230061F4FD /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
 		717CA547275906E70061F4FD /* TongfangEnhancerDaemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TongfangEnhancerDaemon; sourceTree = BUILT_PRODUCTS_DIR; };
 		717CA54F275907090061F4FD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		71B5A5A5275A4440001BE0F3 /* uninstall.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = uninstall.sh; sourceTree = "<group>"; };
 		71BDA1E727591A8E00E8D368 /* fancli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fancli; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BDA1E927591A8E00E8D368 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		71BDA1EE27591AF500E8D368 /* libboost_program_options.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_program_options.a; path = ../../../../usr/local/Cellar/boost/1.76.0/lib/libboost_program_options.a; sourceTree = "<group>"; };
@@ -108,10 +111,11 @@
 		71BDA1F3275921A800E8D368 /* libkmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkmod.a; path = usr/lib/libkmod.a; sourceTree = SDKROOT; };
 		71BDA1F62759231300E8D368 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
 		71C1F4FE2759A3580055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist; sourceTree = "<group>"; };
-		71C1F5002759A3860055283B /* install_daemon.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install_daemon.sh; sourceTree = "<group>"; };
+		71C1F5002759A3860055283B /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		71CB2AEC2759AC6900411309 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		71D73CBF2758ED0800AAB7DA /* TongfangEnhancerUserClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TongfangEnhancerUserClient.cpp; sourceTree = "<group>"; };
 		71D73CC12758ED6F00AAB7DA /* message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
+		71EA5E9E275B3C3F001E20DE /* libboost_program_options.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libboost_program_options.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +150,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71EA5E9F275B3C3F001E20DE /* libboost_program_options.a in Frameworks */,
 				71BDA1F82759241900E8D368 /* libkmod.a in Frameworks */,
-				71BDA1EF27591AF500E8D368 /* libboost_program_options.a in Frameworks */,
 				71BDA1F227591B0100E8D368 /* IOKit.framework in Frameworks */,
 				71BDA1F027591AFC00E8D368 /* CoreServices.framework in Frameworks */,
 			);
@@ -208,6 +212,7 @@
 		715D24462758C26A0078EBFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				71EA5E9E275B3C3F001E20DE /* libboost_program_options.a */,
 				71BDA1F62759231300E8D368 /* Kernel.framework */,
 				71BDA1F3275921A800E8D368 /* libkmod.a */,
 				71BDA1F127591B0100E8D368 /* IOKit.framework */,
@@ -271,7 +276,8 @@
 			isa = PBXGroup;
 			children = (
 				71C1F4FE2759A3580055283B /* io.github.goshin.and.com.kirainmoe.TongfangEnhancerDaemon.plist */,
-				71C1F5002759A3860055283B /* install_daemon.sh */,
+				71C1F5002759A3860055283B /* install.sh */,
+				71B5A5A5275A4440001BE0F3 /* uninstall.sh */,
 			);
 			path = scripts;
 			sourceTree = "<group>";
@@ -720,15 +726,17 @@
 		71BDA1EC27591A8E00E8D368 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/lib,
 					"$(PROJECT_DIR)/MacKernelSDK/Library/x86_64",
-					/usr/local/Cellar/boost/1.76.0/lib,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LIbrary",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_LDFLAGS = "-lboost_program_options";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -736,15 +744,17 @@
 		71BDA1ED27591A8E00E8D368 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/lib,
 					"$(PROJECT_DIR)/MacKernelSDK/Library/x86_64",
-					/usr/local/Cellar/boost/1.76.0/lib,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LIbrary",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_LDFLAGS = "-lboost_program_options";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

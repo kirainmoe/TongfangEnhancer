@@ -21,6 +21,7 @@ void initFanControlConfig(void);
 bool loadFanControlConfig(void);
 void reloadFanControlConfig(void);
 void adjustFanSpeed(double temp);
+void setShouldAdjustFanSpeed(bool enable);
 void* monitorCPUTemperature(unsigned int interval);
 
 #ifdef __cplusplus
